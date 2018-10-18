@@ -9,6 +9,8 @@ dfStatesNew<-dfStatesNew[-9,]
 row.names(arrests)
 colnames(dfStatesNew)
 
+arrests$stateName <- dfStatesNew$stateName
+
 
 #Merged dataframe with the attributes from both dataset:mergeDF
 
