@@ -3,6 +3,7 @@
 library("ggplot2")
 library("ggmap")
 
+#Step A: Load and Merge Datasets
 
 arrests<-USArrests
 dfStatesNew
@@ -34,15 +35,12 @@ mergeDf <- data.frame(statename, area, center)
 
 merge_data <- merge(DataSetMerged,mergeDf)
 
-
-
-
 us <- map_data("state")
 
 merge_data$statename <- tolower(merge_data$statename)
 
 #Step B: Generate a color coded map
-#	Create a color coded map, based on the area of the state 
+#Area of the state
 
 m1 <- ggplot(merge_data, aes(map_id = statename))
 m1 <- m1 + geom_map(map = us, aes(fill = merge_data$area))      
