@@ -49,8 +49,11 @@
         },
         {
             "name": "map_area.png"
+        },
+        {
+            "name": "zoomed_area.png"
         }
     ],
-    "updated_at": "2018-10-18 02:32:59",
+    "updated_at": "2018-10-18 02:33:08",
     "url": "https://github.com/fall2018-wallace/rhw7"
 }
