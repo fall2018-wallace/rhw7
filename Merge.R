@@ -5,7 +5,7 @@ library("ggmap")
 
 dfStatesNew
 dfStatesNew<-dfStatesNew[-9,]
-
+row.names(arrests)
 arrests<-USArrests
 
 #Merged dataframe with the attributes from both dataset:mergeDF
