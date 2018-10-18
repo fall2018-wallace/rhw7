@@ -58,7 +58,7 @@
         {
             "ports": [
                 {
-                    "output": "m3",
+                    "output": "m4",
                     "type": "png"
                 }
             ],
@@ -94,6 +94,6 @@
             "name": "zoom_map.png"
         }
     ],
-    "updated_at": "2018-10-18 03:17:22",
+    "updated_at": "2018-10-18 03:17:29",
     "url": "https://github.com/fall2018-wallace/rhw7"
 }
