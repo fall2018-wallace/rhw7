@@ -12,7 +12,7 @@ colnames(dfStatesNew)
 arrests$stateName <- dfStatesNew$stateName
 
 
-#Merged dataframe with the attributes from both dataset:mergeDF
+#Merged dataframe with the attributes from both dataset
 
 DataSetMerged <- merge(dfStatesNew, arrests)
 
@@ -22,8 +22,7 @@ DataSetMerged <- merge(dfStatesNew, arrests)
 str(DataSetMerged)
 summary(DataSetMerged)
 
-#•Create a new Data frame that has the area of each state (state.area), and the center of each state (state.center), and then merge (by stateName) it with your final data frame in step #1.
-
+#•Create a new Data frame that has the area of each state (state.area), and the center of each state (state.center), and then merge it with your final data frame in ste
 
 statename <- arrests$stateName 
 area <- state.area
