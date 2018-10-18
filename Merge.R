@@ -3,6 +3,7 @@
 library("ggplot2")
 library("ggmap")
 
+
 arrests<-USArrests
 dfStatesNew
 dfStatesNew<-dfStatesNew[-9,]
