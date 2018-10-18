@@ -10,7 +10,7 @@ arrests<-USArrests
 #Merged dataframe with the attributes from both dataset:mergeDF
 
 DataSetMerged <- merge(dfStatesNew, arrests)
-View(DataSetMerged)
+
 
 #Describe DataSetMerged
 
@@ -27,12 +27,12 @@ center <- state.center
 mergeDf <- data.frame(statename, area, center)
 
 merge_data <- merge(DataSetMerged,mergeDf, by = "statename")
-View(merge_data)
+
 
 
 
 us <- map_data("state")
-View(us)
+
 merge_data$statename <- tolower(merge_data$statename)
 
 #Step B: Generate a color coded map
