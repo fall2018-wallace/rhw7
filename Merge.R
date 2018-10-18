@@ -5,6 +5,10 @@ library(ggplot2)
 
 library(ggmap)
 
+dfStatesNew
+
+arrests<-USArrests
+
 #Merged dataframe with the attributes from both dataset:mergeDF
 
 DataSetMerged <- merge(dfStatesNew, arrests, by ="statename")
