@@ -9,7 +9,7 @@ arrests<-USArrests
 
 #Merged dataframe with the attributes from both dataset:mergeDF
 
-DataSetMerged <- merge(dfStatesNew, arrests, by = "stateName")
+DataSetMerged <- merge(dfStatesNew, arrests)
 
 
 #Describe DataSetMerged
@@ -26,7 +26,7 @@ center <- state.center
 
 mergeDf <- data.frame(statename, area, center)
 
-merge_data <- merge(DataSetMerged,mergeDf, by = "stateName")
+merge_data <- merge(DataSetMerged,mergeDf)
 
 
 
