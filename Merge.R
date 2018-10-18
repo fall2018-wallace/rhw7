@@ -12,7 +12,7 @@ colnames(dfStatesNew)
 arrests$stateName <- dfStatesNew$stateName
 
 
-#Merged dataframe with the attributes from both dataset
+#Merge dataframe
 
 DataSetMerged <- merge(dfStatesNew, arrests)
 
