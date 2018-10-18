@@ -38,16 +38,6 @@
         {
             "ports": [
                 {
-                    "output": "map_area",
-                    "type": "png"
-                }
-            ],
-            "source": "Merge.R",
-            "target": "map_area.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "zoom_map",
                     "type": "png"
                 }
@@ -64,6 +54,16 @@
             ],
             "source": "Merge.R",
             "target": "map_mur.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "m2",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "map_area.png"
         }
     ],
     "nodes": [
@@ -94,6 +94,6 @@
             "name": "zoom_map.png"
         }
     ],
-    "updated_at": "2018-10-18 03:17:10",
+    "updated_at": "2018-10-18 03:17:17",
     "url": "https://github.com/fall2018-wallace/rhw7"
 }
