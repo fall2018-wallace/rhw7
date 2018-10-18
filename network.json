@@ -5,6 +5,11 @@
     "created_at": "2018-10-18 02:16:05",
     "edges": [
         {
+            "ports": [],
+            "source": "clean.R",
+            "target": "Merge.R"
+        },
+        {
             "ports": [
                 {
                     "input": "raw_data",
@@ -13,11 +18,6 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
-        },
-        {
-            "ports": [],
-            "source": "clean.R",
-            "target": "Merge.R"
         }
     ],
     "nodes": [
@@ -30,10 +30,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "parshva11shah",
             "desc": "",
-            "name": "Merge.R"
+            "name": "Merge.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-18 02:19:46",
+    "updated_at": "2018-10-18 02:21:48",
     "url": "https://github.com/fall2018-wallace/rhw7"
 }
