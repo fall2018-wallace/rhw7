@@ -40,8 +40,11 @@
             "desc": "",
             "name": "Merge.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "map_mur.png"
         }
     ],
-    "updated_at": "2018-10-18 02:21:58",
+    "updated_at": "2018-10-18 02:32:26",
     "url": "https://github.com/fall2018-wallace/rhw7"
 }
