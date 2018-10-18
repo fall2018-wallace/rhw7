@@ -4,6 +4,7 @@ library("ggplot2")
 library("ggmap")
 
 dfStatesNew
+dfStatesNew<-dfStatesNew[-9,]
 
 arrests<-USArrests
 
