@@ -3,7 +3,7 @@
 library("ggplot2")
 library("ggmap")
 
-#Step A: Load and Merge Datasets
+#A: Load and Merge Datasets
 
 arrests<-USArrests
 dfStatesNew
@@ -39,7 +39,7 @@ us <- map_data("state")
 
 merge_data$statename <- tolower(merge_data$statename)
 
-#Step B: Generate a color coded map
+#B: Generate a color coded map
 #Area of the state
 
 m1 <- ggplot(merge_data, aes(map_id = statename))
@@ -47,8 +47,8 @@ m1 <- m1 + geom_map(map = us, aes(fill = merge_data$area))
 m1 <- m1 + expand_limits(x = us$long , y = us$lat) + coord_map() + ggtitle("Area of United States")
 m1
 
-#Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
-#Repeat step B, but color code the map based on the murder rate of each state.
+#C: Create a color shaded map of the U.S. based on the Murder rate for each state 
+#A color shaded map of the U.S. based on the Murder rate for each state 
 m2 <- ggplot(merge_data, aes(map_id = statename))
 m2 <- m2 + geom_map(map = us, aes(fill = merge_data$Murder))      
 m2 <- m2 + expand_limits(x = us$long , y = us$lat) + coord_map() + ggtitle("United States based on the Murder rate per state")
@@ -68,7 +68,7 @@ m3
 NYC <- geocode(source = "dsk", "nyc, new york,ny")
 NYC
 
-#Step D: Zoom the map
+#D: Zoom the map
 #Repeat step C, but only show the states in the north east
 #Hint: get the lat and lon of new york city
 #Hint: set the xlim and ylim to NYC +/- 10
