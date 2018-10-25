@@ -1,0 +1,99 @@
+{
+    "collaborators": [
+        "parshva11shah"
+    ],
+    "created_at": "2018-10-18 02:16:05",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "dfStatesNew",
+                    "output": "c",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "Merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "m1",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "map_area.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "m2",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "map_mur.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "m3",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "map_mur_pop.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "m4",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "zoom_map.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "parshva11shah",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "parshva11shah",
+            "desc": "",
+            "name": "Merge.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "map_mur.png"
+        },
+        {
+            "name": "map_mur_pop.png"
+        },
+        {
+            "name": "map_area.png"
+        },
+        {
+            "name": "zoom_map.png"
+        }
+    ],
+    "updated_at": "2018-10-18 03:17:59",
+    "url": "https://github.com/fall2018-wallace/rhw7"
+}
